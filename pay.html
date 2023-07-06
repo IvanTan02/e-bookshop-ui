@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan's Bookstore - Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/pay.js"></script>
+    <script src="js/navbar.js"></script>
+    <!-- Link for icons used -->
+    <script src="https://kit.fontawesome.com/fc55076b08.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Container containing the whole page -->
+    <div class="container">
+        <!-- Bookshop Logo -->
+        <div class="logo">
+            <span style="color: white">
+                <i class="fa-solid fa-chess-rook fa-3x fa-white logo-icon"></i>
+            </span>
+            <h1>Ivan's Bookstore</h1>
+        </div>
+        <!-- Navbar -->
+        <div class="topnav" id="topNavbar">
+            <a href="index.html" title="Home Page" class="active">Home</a>
+            <a href="#about" title="About Us">About Us</a>
+            <a href="#contact" title="Contact Us">Contact Us</a>
+            <a href="javascript:void(0);" title="Navigation Toggle" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars fa-xs"></i>
+            </a>
+        </div>
+        <!-- Container containing the form of the page -->
+        <div class="content-container">
+            <!-- Payment Form -->
+            <form class="payment-form">
+                <h2 class="payment-title">Payment Options</h2>
+                <div class="payment-options">
+                    <h3>Debit / Credit Card</h3>
+                    <img src="image/mastercard.png" alt="Mastercard Option">
+                </div>
+                <div class="num-input">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" name="card-number" id="card-number" maxlength="19">
+                </div class="exp-date">
+                <div class="exp-date">
+                    <label for="exp-month">Expiration Date:</label>
+                    <select name="exp-month" id="exp-month">
+                        <option value="0">Month</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <span>/</span>
+                    <select name="exp-year" id="exp-year">
+                        <option value="0">Year</option>
+                        <option value="2022">22</option>
+                        <option value="2023">23</option>
+                        <option value="2024">24</option>
+                        <option value="2025">25</option>
+                        <option value="2026">26</option>
+                        <option value="2027">27</option>
+                        <option value="2028">28</option>
+                        <option value="2029">29</option>
+                        <option value="2030">30</option>
+                        <option value="2031">31</option>
+                        <option value="2032">32</option>
+                        <option value="2033">33</option>
+                        <option value="2034">34</option>
+                        <option value="2035">35</option>
+                    </select>
+                </div>
+                <div class="num-input">
+                    <label for="sec-code">Security Code:</label>
+                    <input type="text" name="sec-code" id="sec-code">
+                    <p id="sec-code-hint">(3-4 digit code normally on the back of your card)</p>
+                </div>
+                <input type="button" id="checkout-btn" value="Checkout">
+            </form>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Ivan's Bookshop by Ivan Tan |
+                <a href="index.html" title="Ivan Tan's Portfolio">Portfolio</a>
+                <span> | </span>
+                <a href="https://github.com/IvanTan02" title="Ivan Tan's Github Profile">GitHub</a>
+                <span> | </span>
+                <a href="https://www.linkedin.com/in/ivantan02/" title="Ivan Tan's LinkedIn Profile">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

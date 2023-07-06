@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan's Bookshop - Success</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/success.js"></script>
+    <script src="js/navbar.js"></script>
+    <!-- Links for icons used -->
+    <script src="https://kit.fontawesome.com/fc55076b08.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Container containing the whole page -->
+    <div class="container">
+        <!-- Bookshop Logo -->
+        <div class="logo">
+            <span style="color: white">
+                <i class="fa-solid fa-chess-rook fa-3x fa-white logo-icon"></i>
+            </span>
+            <h1>Ivan's Bookstore</h1>
+        </div>
+        <!-- Navbar -->
+        <div class="topnav" id="topNavbar">
+            <a href="index.html" title="Home Page" class="active">Home</a>
+            <a href="#about" title="About Us">About Us</a>
+            <a href="#contact" title="Contact Us">Contact Us</a>
+            <a href="javascript:void(0);" title="Navigation Toggle" class="icon" onclick="responsiveNav()">
+                <i class="fa fa-bars fa-xs"></i>
+            </a>
+        </div>
+        <!-- Container containing the form of the page -->
+        <div class="content-container">
+            <!-- Success message -->
+            <main class="msg-container">
+                <h2 class="payment-status">Your card details was successfully entered!</h2>
+                <div class="payment-success-img">
+                    <img src="image/payment-success.png" alt="Payment successful">
+                </div>
+                <!-- Box containing the response from the server -->
+                <div class="server-rsp">
+                    <img src="image/mastercard.png" alt="Mastercard Option">
+                    <div class="response">
+                        <p id="res-msg">Response from server: </p>
+                        <p id="card-display">Your credit card number ends in (Credit Card Number)</p>
+                    </div>
+                </div>
+                <a href="index.html" class="home-btn">Return to Home Page</a>
+            </main>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Ivan's Bookshop by Ivan Tan |
+                <a href="index.html" title="Ivan Tan's Portfolio">Portfolio</a>
+                <span> | </span>
+                <a href="https://github.com/IvanTan02" title="Ivan Tan's Github Profile">GitHub</a>
+                <span> | </span>
+                <a href="https://www.linkedin.com/in/ivantan02/" title="Ivan Tan's LinkedIn Profile">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
